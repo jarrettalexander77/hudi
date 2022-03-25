@@ -38,9 +38,9 @@ jobs:
       - name: List
         run:
           ls
-      - name: list again
+      - name: List
         run:
-          ls hudi-spark-datasource/target
+          ls packaging/hudi-spark-bundle && ls packaging/hudi-spark-bundle/target
       - name: Save Artifact
         run:
           mkdir staging && cp hudi-spark-datasource/target/*.jar staging
