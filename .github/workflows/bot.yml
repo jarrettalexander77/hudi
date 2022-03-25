@@ -43,7 +43,7 @@ jobs:
           ls packaging/hudi-spark-bundle && ls packaging/hudi-spark-bundle/target
       - name: Save Artifact
         run:
-          mkdir staging && cp hudi-spark-datasource/target/*.jar staging
+          mkdir staging && cp packaging/hudi-spark-bundle/target/*.jar staging
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
